@@ -37,4 +37,11 @@ defmodule ExMonWeb.Router do
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   end
+
+  scope "/", ExMonWeb do
+    pipe_through :api
+
+    get "/", WelcomeController, :index
+
+  end
 end
