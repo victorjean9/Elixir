@@ -47,6 +47,7 @@ defmodule ExMon.MixProject do
       {:argon2_elixir, "~> 3.0"},
       {:tesla, "~> 1.4"},
       {:hackney, "~> 1.17"},
+      {:guardian, "~> 2.0"},
     ]
   end
 
